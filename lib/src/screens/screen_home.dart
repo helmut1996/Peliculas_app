@@ -21,12 +21,18 @@ class ScreenHome extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
-        children: [
-          // widget Card Swiper
-          CardSwiper(),
-
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 5),
+            // widget Tarjetas Principal..
+            CardSwiper(),
+            SizedBox(height: 5),
+            // widget de peliculas populares..
+            MovieSlider(),
+      
+          ],
+        ),
       ),
     );
   }
